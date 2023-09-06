@@ -39,7 +39,7 @@ export default function Header() {
 							<NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
 						</NavDropdown>
 						<NavDropdown title="Loans">
-							<NavDropdown.Item href="./unsecured-personal-loan">Personal Unnsecured Loan</NavDropdown.Item>
+							<NavDropdown.Item href="./unsecured-personal-loan">Personal Unsecured Loan</NavDropdown.Item>
 						</NavDropdown>
 						<NavDropdown title="Mortages">
 							<NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
