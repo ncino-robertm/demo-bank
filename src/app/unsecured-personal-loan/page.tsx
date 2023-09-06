@@ -31,7 +31,7 @@ export default function Page() {
 							width: "100%", 
 							color:"white"
 						}}
-						href="#"
+						href="https://ncino.simplenexus.com/homehub/prefill_form?product_id=a0u8c00004gsUusAAE"
 						value="Apply Now">
 						Apply Now
 					</Button>
@@ -39,13 +39,15 @@ export default function Page() {
 			</Row>
 		</Container>
 
-		<Row className="my-5 py-5">
+		<Row className="my-5 py-4">
 			<Col className="mx-auto " xs={4}>
 				<Container>
 					<Image
 						alt="logo" 
 						width={100} 
-						src={Logo}/>
+						height={33}
+						src="/logo.png"
+					/>
 				</Container>
 			</Col>
 		</Row>

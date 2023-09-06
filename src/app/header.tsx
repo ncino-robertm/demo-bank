@@ -1,6 +1,5 @@
 'use client'
 import { useState } from 'react'
-import  Logo from '../../public/logo.png'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -9,6 +8,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Image from 'next/image';
+import { Lock } from 'react-bootstrap-icons';
  
 export default function Header() { 
 	return (
@@ -17,18 +17,19 @@ export default function Header() {
 				<Navbar.Brand href="/">
 					<Image
 						alt=""
-						src={Logo}
+						src="/logo.png"
 						width={150}
+						height={50}
 						// className="d-inline-block align-top"
 					/>
 				</Navbar.Brand>
 				<Nav className="">
-					<Nav.Link href="#home">Login</Nav.Link>
+					<Button variant="outline-secondary" href="#home">Login <Lock/></Button>
 				</Nav>
-				<Navbar.Toggle aria-controls="r" />
+				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 				<Navbar.Collapse id="responsive-navbar-nav">
 					<Nav
-						className="me-auto"
+						className=""
 					>
 						<NavDropdown title="Checking & Savings">
 							<NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
