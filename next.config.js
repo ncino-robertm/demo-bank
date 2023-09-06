@@ -3,19 +3,21 @@ const isGithubActions = process.env.GITHUB_ACTIONS || false
 
 let assetPrefix = ''
 let basePath = ''
+let isUnoptimized = false
 
 if (isGithubActions) {
   const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')
 
   assetPrefix = `/${repo}/`
   basePath = `/${repo}`
+  isUnoptimized = true
 }
 
 const nextConfig = {
 	assetPrefix: assetPrefix,
 	basePath: basePath,
 	output: "export",
-	images: { unoptimized: true },
+	images: { unoptimized: isUnoptimized },
     webpack(config) {
         config.resolve.extensionAlias = {
             ".js": [".js", ".ts"],
