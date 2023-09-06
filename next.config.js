@@ -3,14 +3,14 @@ const isGithubActions = process.env.GITHUB_ACTIONS || false
 
 let assetPrefix = ''
 let basePath = ''
-let isUnoptimized = false
+let isUnoptimized = true
 
 if (isGithubActions) {
   const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')
 
   assetPrefix = `/${repo}/`
   basePath = `/${repo}`
-  isUnoptimized = true
+  isUnoptimized = false
 }
 
 const nextConfig = {

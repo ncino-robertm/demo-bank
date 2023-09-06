@@ -45,8 +45,7 @@ export default function Page() {
 					<Image
 						alt="logo" 
 						width={100} 
-						height={33}
-						src="/logo.png"
+						src={Logo}
 					/>
 				</Container>
 			</Col>

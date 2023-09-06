@@ -8,6 +8,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Image from 'next/image';
+import  Logo from '../../public/logo.png'
 import { Lock } from 'react-bootstrap-icons';
  
 export default function Header() { 
@@ -17,9 +18,9 @@ export default function Header() {
 				<Navbar.Brand href="/">
 					<Image
 						alt=""
-						src="/logo.png"
+						src={Logo}
 						width={150}
-						height={50}
+						// height={50}
 						// className="d-inline-block align-top"
 					/>
 				</Navbar.Brand>
